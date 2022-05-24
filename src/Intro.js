@@ -15,6 +15,9 @@ const IntroSection = styled.section`
   color: #099;
   z-index: 100;
   transition: 1s;
+  animation: introEnd 1s ease-out 1 normal forwards;
+  animation-delay: 4s;
+
   #hedgehog {
     width: 80vw;
     min-width: 250px;
@@ -33,12 +36,14 @@ const IntroSection = styled.section`
       stroke-dashoffset: 0;
     }
   }
+
   h1 {
       font-size: 52px;
+      font-family: 'My Soul';
       margin: 0;
       opacity: 0;
       transform: rotateX(90deg);
-      animation: name 2s ease-out 1 normal forwards;
+      animation: name 1s ease-out 1 normal forwards;
       animation-delay: 2s;
   }
   @keyframes name {
@@ -51,13 +56,22 @@ const IntroSection = styled.section`
         opacity: 1;
     }
   }
+  @keyframes introEnd {
+    0% {
+        top: 0;
+    }
+    to {
+        top: -100vh;
+    }
+  }
+  
 `;
 
 function Intro() {
 
   return (
     <>
-      <IntroSection>
+      <IntroSection className="intro">
         <h1>Riberack</h1>
         <svg
           version="1.0"
