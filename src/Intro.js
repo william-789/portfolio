@@ -12,7 +12,7 @@ const IntroSection = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #099;
+  color: #e3ac2d;
   z-index: 100;
   transition: 1s;
   animation: introEnd 1s ease-out 1 normal forwards;
@@ -23,7 +23,7 @@ const IntroSection = styled.section`
     min-width: 250px;
     max-width: 350px;
     stroke-width: 20px;
-    stroke: #099;
+    stroke: #e3ac2d;
     stroke-dasharray: 11160;
     stroke-dashoffset: 11160;
     animation: logoAnimated 5s ease-in-out 1 normal forwards;
