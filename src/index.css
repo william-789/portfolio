@@ -1,9 +1,10 @@
-/*main title*/
-@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Tangerine&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap');/*used in Intro.js*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 body {
   margin: 0;
-  font-family:'Ms Madi', sans-serif;/*'Fleur De Leah'*/
+  font-family: 'IBM Plex Mono', monospace;
+}
+* {
+  box-sizing: border-box;
 }
