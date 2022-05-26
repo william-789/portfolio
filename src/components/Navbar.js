@@ -37,6 +37,10 @@ li a {
   font-size: 24px;
   border-right: solid 2px #e3ac2d;
 }
+li a[href^="#contact"] {
+  color: #fff;
+  text-decoration: underline;
+}
 .bars {
   display: none;
 }
