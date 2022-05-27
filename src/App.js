@@ -1,7 +1,9 @@
 import Intro from "./Intro";
 import Navbar from "./components/Navbar";
 import Homepage from "./components/Homepage";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 import Test from "./components/Test";
 
 export default function App() {
@@ -11,6 +13,7 @@ export default function App() {
       <Navbar />
       <Homepage/>
       <Skills />
+      <Contact />
     </>
   );
 }

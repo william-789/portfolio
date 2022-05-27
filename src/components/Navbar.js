@@ -4,7 +4,8 @@ import { FaBars } from "react-icons/fa";
 
 const NavbarBar = styled.nav `
 width: 100vw;
-position: fixed;
+position: sticky;
+top:0;
 z-index: 11;
 background-color: #000;
 display: flex;

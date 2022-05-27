@@ -3,19 +3,14 @@ import styled from 'styled-components'
 
 const HomeSection = styled.section `
 width: 100vw;
-min-height: 100vh;
 display: flex;
 justify-content: center;
 background-color: #000;
-position: relative;
 color: #fff;
 align-items: center;
 flex-direction: column;
 font-size: 2rem;
 svg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
 }
 h1 {
