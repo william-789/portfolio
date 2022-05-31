@@ -5,7 +5,7 @@ import CSSimg from './img/CSS.png'
 import HTMLimg from './img/HTML.png'
 import JSimg from './img/JS.png'
 import ReactImg from './img/React.png'
-import NodeImg from './img/Node.png'
+import GitImg from './img/Git-Icon-1788C.png'
 
 const SkillSection = styled.section `
 width: 100vw;
@@ -40,7 +40,7 @@ function Skills() {
         <img src={HTMLimg} alt='HTML logo'></img>
         <img src={JSimg} alt='JavaScript logo'></img>
         <img src={ReactImg} alt='React JS logo'></img>
-        <img src={NodeImg} alt='Node JS logo'></img>  
+        <img src={GitImg} alt='Git logo'></img>  
         </div>
     </SkillSection>
   )

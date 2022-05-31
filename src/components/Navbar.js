@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import { FaBars } from "react-icons/fa";
 
 const NavbarBar = styled.nav `
@@ -50,19 +50,49 @@ li a[href^="#contact"] {
   li {
     display: none;
   }
+  li a[href^="#contact"] {
+  text-decoration: none;
+  }
   li.active {
     display: block; 
     width: 100vw;
+    padding: 20px 0;
+  }
+  li.active a {    
+    border-right: 0px none;
+    border-bottom: solid 2px #e3ac2d;
   }
   .bars {
+    position: absolute;
+    right: 45px;
+    top: 25px;
     fill: #e3ac2d;
     font-size: 24px;
-    display: inline;
+    display: inline;    
   }
 }
 `;
 
 function Navbar() {
+  function correctScroll (e) {
+    e.preventDefault();
+    const href = e.currentTarget.getAttribute('href');
+    const section = document.querySelector(href);
+    const navbarHeight = document.querySelector('nav').offsetHeight;
+    const topSection = section.offsetTop;
+    const desiredPosition = topSection-navbarHeight;
+    window.scrollTo({
+      top: desiredPosition,
+      behavior: "smooth"
+    });
+  }
+  function handleNav () {
+    const items = document.querySelectorAll('.nav li');
+    console.log(items);
+    items.forEach( item => {
+      item.classList.toggle("active");
+    })
+  }
   return (
     <NavbarBar>
       <Logo>
@@ -83,10 +113,10 @@ function Navbar() {
         </svg>
       </Logo>
       <Nav className='nav'>
-        <li><a href='#projects'>Projects</a></li>
-        <li><a href='#skills'>Skills</a></li>
-        <li><a href='#contact'>Contact</a></li>
-        <FaBars className='bars' />
+        <li><a href='#projects' onClick={correctScroll}>Projects</a></li>
+        <li><a href='#skills' onClick={correctScroll}>Skills</a></li>
+        <li><a href='#contact' onClick={correctScroll}>Contact</a></li>
+        <FaBars className='bars' onClick={handleNav}/>
       </Nav>
     </NavbarBar>
   )
@@ -97,6 +127,6 @@ export default Navbar
 /* 650px responsive
     Homepage
     Projects
-    Skills (logos: js, html, css, react js, three.js, node js, express js, sass)
+    Skills (logos: js, html, css, react js, git, three.js, node js, express js, sass)
     Contact
 */
