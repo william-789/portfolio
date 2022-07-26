@@ -1,9 +1,12 @@
 import genericImage from './img/genericImage.png'
+import teslaImage from './img/TeslaCopy.png'
+import clientImage from './img/clientAPI.png'
+import RPSimage from './img/minigame.png'
 
 export const ProjectsData = [
     {
         name:'Tesla Copy',
-        image: genericImage,
+        image: teslaImage,
         reactUsage: true,
         apiUsage: false,
         jsUsage: true,
@@ -15,9 +18,9 @@ export const ProjectsData = [
     },
     {
         name:'Client info Plataform',
-        image: genericImage,
+        image: clientImage,
         reactUsage: true,
-        apiUsage: false,
+        apiUsage: true,
         jsUsage: true,
         htmlUsage: true,
         cssUsage: true,
@@ -39,7 +42,7 @@ export const ProjectsData = [
     },
     {
         name:'Rock, paper, scissors',
-        image: genericImage,
+        image: RPSimage,
         reactUsage: true,
         apiUsage: false,
         jsUsage: true,

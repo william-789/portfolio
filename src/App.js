@@ -4,7 +4,6 @@ import Homepage from "./components/Homepage";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import Test from "./components/Test";
 
 export default function App() {
   return (

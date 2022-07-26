@@ -123,10 +123,3 @@ function Navbar() {
 }
 
 export default Navbar
-
-/* 650px responsive
-    Homepage
-    Projects
-    Skills (logos: js, html, css, react js, git, three.js, node js, express js, sass)
-    Contact
-*/
