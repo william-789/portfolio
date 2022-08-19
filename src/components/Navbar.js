@@ -6,7 +6,7 @@ const NavbarBar = styled.nav `
 width: 100vw;
 position: sticky;
 top:0;
-z-index: 11;
+z-index: 9;
 background-color: #000;
 display: flex;
 justify-content: space-between;
@@ -22,6 +22,7 @@ border-bottom: solid 5px #e3ac2d;
 
   .bars {
     position: absolute;
+    cursor: pointer;
     right: 45px;
     top: 25px;
     fill: #e3ac2d;
@@ -62,9 +63,6 @@ li a[href^="#contact"] {
   color: #fff;
   text-decoration: underline;
 }
-.bars {
-  display: none;
-}
 
 @media only screen and (max-width: 650px) {
   position: absolute;
@@ -96,8 +94,6 @@ li a[href^="#contact"] {
 `;
 
 function Navbar() {
-  const menu = document.querySelector('.nav');
-
   function correctScroll (e) {
     e.preventDefault();
     const href = e.currentTarget.getAttribute('href');
@@ -109,9 +105,9 @@ function Navbar() {
       top: desiredPosition,
       behavior: "smooth"
     });
-    menu.classList.toggle("active");
   }
   function handleNav () {
+    const menu = document.querySelector('.nav');
     menu.classList.toggle("active");
   }
   return (
