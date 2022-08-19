@@ -31,7 +31,6 @@ border-bottom: solid 5px #e3ac2d;
   }
 
   .nav.active {
-    top: 0;
     visibility: visible;
     opacity: 1;
   }
@@ -69,7 +68,7 @@ li a[href^="#contact"] {
 
 @media only screen and (max-width: 650px) {
   position: absolute;
-  top: 100vh;
+  top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
