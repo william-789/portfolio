@@ -1,4 +1,4 @@
-import genericImage from './img/genericImage.png'
+import ebecImage from './img/Ebec.jpg'
 import teslaImage from './img/TeslaCopy.png'
 import clientImage from './img/clientAPI.png'
 import RPSimage from './img/minigame.png'
@@ -30,15 +30,15 @@ export const ProjectsData = [
     },
     {
         name:'EBEC 22',
-        image: genericImage,
+        image: ebecImage,
         reactUsage: true,
         apiUsage: false,
         jsUsage: true,
         htmlUsage: true,
         cssUsage: true,
         description: 'Website created during early 2022 to be used for advertisement and as information center for the EBEC22, before and during the event in Porto.',
-        link:'/',
-        code: '/',
+        link:'https://william-789.github.io/ebec22',
+        code: 'https://github.com/william-789/ebec22',
     },
     {
         name:'Rock, paper, scissors',

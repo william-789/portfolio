@@ -13,13 +13,34 @@ justify-content: space-between;
 align-items: center;
 padding: 0 100px 0 35px;
 border-bottom: solid 5px #e3ac2d;
+.bars {
+  display: none;
+}
+
 @media only screen and (max-width: 650px) {
   padding: 0 35px;
+
+  .bars {
+    position: absolute;
+    right: 45px;
+    top: 25px;
+    fill: #e3ac2d;
+    font-size: 24px;
+    display: inline;  
+    z-index: 11;  
+  }
+
+  .nav.active {
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+  }
 }
 `;
 const Logo = styled.div `
 max-height: 75px;
 max-width: 75px;
+z-index: 11;
 #hedgehog {
   fill: #e3ac2d;
   height: 100%;
@@ -47,33 +68,37 @@ li a[href^="#contact"] {
 }
 
 @media only screen and (max-width: 650px) {
-  li {
-    display: none;
-  }
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  padding: 55px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 2s;
+  z-index: 10;
+
   li a[href^="#contact"] {
   text-decoration: none;
   }
-  li.active {
-    display: block; 
-    width: 100vw;
+  li {
     padding: 20px 0;
   }
-  li.active a {    
+  li a {    
     border-right: 0px none;
     border-bottom: solid 2px #e3ac2d;
-  }
-  .bars {
-    position: absolute;
-    right: 45px;
-    top: 25px;
-    fill: #e3ac2d;
-    font-size: 24px;
-    display: inline;    
   }
 }
 `;
 
 function Navbar() {
+  const menu = document.querySelector('.nav');
+
   function correctScroll (e) {
     e.preventDefault();
     const href = e.currentTarget.getAttribute('href');
@@ -85,13 +110,10 @@ function Navbar() {
       top: desiredPosition,
       behavior: "smooth"
     });
+    menu.classList.toggle("active");
   }
   function handleNav () {
-    const items = document.querySelectorAll('.nav li');
-    console.log(items);
-    items.forEach( item => {
-      item.classList.toggle("active");
-    })
+    menu.classList.toggle("active");
   }
   return (
     <NavbarBar>
@@ -116,8 +138,8 @@ function Navbar() {
         <li><a href='#projects' onClick={correctScroll}>Projects</a></li>
         <li><a href='#skills' onClick={correctScroll}>Skills</a></li>
         <li><a href='#contact' onClick={correctScroll}>Contact</a></li>
-        <FaBars className='bars' onClick={handleNav}/>
       </Nav>
+      <FaBars className='bars' onClick={handleNav}/>
     </NavbarBar>
   )
 }
