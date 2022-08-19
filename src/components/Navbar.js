@@ -95,6 +95,7 @@ li a[href^="#contact"] {
 
 function Navbar() {
   function correctScroll (e) {
+    const menu = document.querySelector('.nav');
     e.preventDefault();
     const href = e.currentTarget.getAttribute('href');
     const section = document.querySelector(href);
@@ -105,6 +106,7 @@ function Navbar() {
       top: desiredPosition,
       behavior: "smooth"
     });
+    menu.classList.toggle("active");
   }
   function handleNav () {
     const menu = document.querySelector('.nav');
