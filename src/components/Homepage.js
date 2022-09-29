@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const HomeSection = styled.section `
-width: 100vw;
+width: 100%;
 display: flex;
 justify-content: center;
 background-color: #000;

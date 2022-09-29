@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ProjectsData } from './ProjectsData';
 
 const SkillSection = styled.section `
-width: 100vw;
+width: 100%;
 display: flex;
 align-items: center;
 flex-direction: column;
@@ -23,7 +23,7 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     max-width: 400px;
     padding: 30px;
     @media only screen and (max-width: 650px){

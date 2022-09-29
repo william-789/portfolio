@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 const ContactSection = styled.section `
-width: 100vw;
+width: 100%;
 background-color: #000;
 display: flex;
 align-items: center;

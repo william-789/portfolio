@@ -8,7 +8,7 @@ import ReactImg from './img/React.png'
 import GitImg from './img/Git-Icon-1788C.png'
 
 const SkillSection = styled.section `
-width: 100vw;
+width: 100%;
 background-color: #fff;
 text-align: center;
 color: #e3ac2d;

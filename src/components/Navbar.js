@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FaBars } from "react-icons/fa";
 
 const NavbarBar = styled.nav `
-width: 100vw;
+width: 100%;
 position: sticky;
 top:0;
 z-index: 9;

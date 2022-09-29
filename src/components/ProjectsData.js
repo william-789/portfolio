@@ -17,7 +17,7 @@ export const ProjectsData = [
         code:'https://github.com/william-789/tesla-copy.git',
     },
     {
-        name:'Client info Plataform',
+        name:'Client info Platform',
         image: clientImage,
         reactUsage: true,
         apiUsage: true,
@@ -43,7 +43,7 @@ export const ProjectsData = [
     {
         name:'Rock, paper, scissors',
         image: RPSimage,
-        reactUsage: true,
+        reactUsage: false,
         apiUsage: false,
         jsUsage: true,
         htmlUsage: true,
