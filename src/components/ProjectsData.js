@@ -2,8 +2,25 @@ import ebecImage from './img/Ebec.jpg'
 import teslaImage from './img/TeslaCopy.png'
 import clientImage from './img/clientAPI.png'
 import RPSimage from './img/minigame.png'
+import angularTask from './img/taskManager.png'
 
 export const ProjectsData = [
+    {
+        name:'HedgeHUG',
+        image: angularTask,
+        reactUsage: false,
+        apiUsage: false,
+        jsUsage: false,
+        htmlUsage: false,
+        cssUsage: false,
+        angular: true,
+        typescript: true,
+        rxjs: true,
+        tailwind: true,
+        description: 'This is a CRUD project created with Angular where the user the register, login and keep track of tasks. Firebase has been used for authentication, database and deployment.',
+        link:'https://task-manager-9551c.web.app',
+        code:'https://github.com/william-789/task-pet',
+    },
     {
         name:'Tesla Copy',
         image: teslaImage,
