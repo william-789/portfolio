@@ -10,3 +10,21 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+/* Firefox */
+* {
+  scrollbar-width: 12px;
+  scrollbar-color: #000 #e3ac2d;
+}
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #e3ac2d;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 20px;
+  border: 3px solid #e3ac2d;
+}
